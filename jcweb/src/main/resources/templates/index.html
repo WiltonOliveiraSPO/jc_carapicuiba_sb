@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="icon" type="image/jpeg" th:href="@{/images/izunome_img.ico}">
+    <meta charset="UTF-8">
+    <title>Sistema da Igreja – Johrei Center Carapicuíba</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            overflow: hidden;
+            background: linear-gradient(to right, #1f1f1f, #2c3e50);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .main-container {
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        .logo-img {
+            max-width: 280px;
+        }
+
+        .btn-custom {
+            background-color: #009966;
+            color: white;
+            border-radius: 30px;
+            padding: 10px;
+            font-weight: bold;
+            transition: 0.3s;
+            font-size: 0.95rem;
+        }
+
+        .btn-custom:hover {
+            background-color: #00b37a;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body class="text-center text-white">
+
+<div class="main-container">
+
+    <!-- IMAGEM -->
+    <div class="mb-4">
+        <img th:src="@{/images/izunome_img.jpg}"
+             alt="Izunome"
+             class="img-fluid logo-img">
+    </div>
+
+    <!-- BOTÕES -->
+    <div class="row g-3">
+
+        <div class="col-md-3">
+            <a th:href="@{/dedicacao}" class="btn btn-custom w-100">Frequência Diária</a>
+        </div>
+
+        <div class="col-md-3">
+            <a th:href="@{/pedidos}"class="btn btn-custom w-100">Dedicação Diária</a>
+        </div>
+
+        <div class="col-md-3">
+            <a th:href="@{/membros}" class="btn btn-custom w-100">Cadastro de Membros</a>
+        </div>
+
+        <div class="col-md-3">
+            <a href="#" class="btn btn-custom w-100">Cadastro Primeira Vez</a>
+        </div>
+
+        <div class="col-md-3">
+            <a href="#" class="btn btn-custom w-100">Gratidão Diária</a>
+        </div>
+
+        <div class="col-md-3">
+            <a href="#" class="btn btn-custom w-100">Pesquisa Dedicação</a>
+        </div>
+
+        <div class="col-md-3">
+            <a href="#" class="btn btn-custom w-100">Pesquisa Pedidos</a>
+        </div>
+
+        <div class="col-md-3">
+            <a href="#" class="btn btn-custom w-100">Pesquisa Membros</a>
+        </div>
+
+        <div class="col-md-3">
+            <a href="#" class="btn btn-custom w-100">Pesquisa Primeira Vez</a>
+        </div>
+
+        <div class="col-md-3 offset-md-3">
+            <a href="#" class="btn btn-custom w-100">Pesquisa Gratidão</a>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

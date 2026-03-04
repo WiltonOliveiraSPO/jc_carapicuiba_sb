@@ -1,0 +1,24 @@
+body {
+    background-color: #2d2d2d;
+}
+
+.imagem-central {
+    max-width: 450px;
+    border-radius: 10px;
+}
+
+.btn-verde {
+    background-color: #009966;
+    color: white;
+    border-radius: 30px;
+    padding: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.btn-verde:hover {
+    background-color: #00b37a;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+}
